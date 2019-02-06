@@ -42,14 +42,22 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 40%; /* Top and Left are in a relation to the parent element */
+    left: 50%; /* is where the text box was located to left side */
+    transform: translate(-50%, -50%); /* On the transform, when we translated, is in relation to the element itself */
+    text-align: center;
 }
 
 .heading-primary {
@@ -59,14 +67,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.text-box {
-    position: absolute;
-    top: 40%; /* Top and Left are in a relation to the parent element */
-    left: 50%; /* is where the text box was located to left side */
-    transform: translate(-50%, -50%); /* On the transform, when we translated, is in relation to the element itself */
-    text-align: center;
-}
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 4rem;
@@ -82,7 +83,7 @@ body {
 }
 
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -159,7 +160,7 @@ body {
 
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
@@ -177,7 +178,7 @@ body {
     transition: all .4s;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: white;
 }
 
@@ -186,7 +187,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
