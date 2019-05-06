@@ -16,7 +16,8 @@
     "url": "https://github.com/velvetcerise/natours/issues"
   },
   "homepage": "https://github.com/velvetcerise/natours#readme",
-  "dependencies": {
-    "node-sass": "^4.11.0"
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }
